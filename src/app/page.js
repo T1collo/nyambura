@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import StaggeredText from '@/components/StaggeredText';
 import AnimatedSection from '@/components/AnimatedSection';
 import Link from 'next/link';
+import Image from "next/image"; // Move this line to the top
 
 const sentences = [
   "And it got me thinkingthinking🤔!",
@@ -116,10 +117,11 @@ export default function Home() {
             🥺🥺🥺Will you be my Girlfriend🥺🥺🥺
           </h1>
           <div className="mb-6 bg-gray-400 rounded-lg shadow-md">
-            <img
-              className="rounded-lg shadow-md hover:scale-105 duration-300 w-48 sm:w-64 md:w-80"
+            <Image
               src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif"
               alt="Cute animated illustration"
+              width={320} // Adjust the width as needed
+              height={240} // Adjust the height as needed
             />
           </div>
         </div>
