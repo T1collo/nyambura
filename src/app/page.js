@@ -8,12 +8,14 @@ import Link from 'next/link';
 import Image from "next/image"; // Move this line to the top
 
 const sentences = [
-  "And it got me thinkingthinking🤔!",
-  "Why don't I give you a placeholder",
+  "Tt got me thinkingthinking!",
+  "Why don't I give ",
+  "you a placeholder",
   "for the time being???",
-  "I decided to ask you in my own little special way",
-  "So before we get the cake ona a platter proposal",
-  "Hope you don't mind if ii do it this way",
+  "I decided to ask you ",
+  "in my own little special way",
+  "So before we get the cake",
+  "Hope you don't mind this way",
   "Hope you like it",
   "So enough of the words",
   "I'm nervous",
@@ -31,6 +33,7 @@ const sectionColors = [
   "bg-gradient-to-br from-teal-600 to-teal-400",
   "bg-gradient-to-br from-orange-600 to-orange-400",
   "bg-gradient-to-br from-gray-600 to-gray-400",
+  "bg-gradient-to-br from-lime-600 to-lime-400",
   "bg-gradient-to-br from-lime-600 to-lime-400",
 ];
 
