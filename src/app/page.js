@@ -8,17 +8,17 @@ import Link from 'next/link';
 import Image from "next/image"; // Move this line to the top
 
 const sentences = [
-  "Tt got me thinkingthinking!",
-  "Why don't I give ",
-  "you a placeholder",
-  "for the time being???",
-  "I decided to ask you ",
-  "in my own little special way",
-  "So before we get the cake",
-  "Hope you don't mind this way",
+  "got me thinkingthinking!",
+  "Why don't I give you",
+  "a placeholder",
+  "in my own little",
+  "special way",
+  "in my own little ",
+  "Before we get the cake",
+  "Hope you don't mind",
   "Hope you like it",
   "So enough of the words",
-  "I'm nervous",
+  "This's nervous",
   "What I want to ask is",
 ];
 
