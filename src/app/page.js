@@ -8,7 +8,7 @@ import Link from 'next/link';
 import Image from "next/image"; // Move this line to the top
 
 const sentences = [
-  "got me thinkingthinking!",
+  "got me thinking!",
   "Why don't I give you",
   "a placeholder",
   "in my own little",
