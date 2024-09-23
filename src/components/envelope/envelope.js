@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
-import { motion } from "framer-motion"; // Import motion from Framer Motion
-import styles from './index.module.css'; // Import the CSS module
+import { motion } from "framer-motion";
+import styles from './index.module.css';
 
 const envelopeVariants = {
-  hidden: { opacity: 0, scale: 0.5 }, // Start hidden and scaled down
+  hidden: { opacity: 0, scale: 0.5 },
   visible: { 
     opacity: 1, 
     scale: 1,
@@ -13,21 +13,39 @@ const envelopeVariants = {
 };
 
 const letterVariants = {
-  hidden: { opacity: 0, y: 20 }, // Start hidden and slightly moved down
+  hidden: { opacity: 0, y: 20 },
   visible: { 
     opacity: 1, 
     y: 0,
-    transition: { duration: 0.5, delay: 0.3 } // Delay for the letter to appear
+    transition: { duration: 0.5, delay: 0.3 }
   },
 };
 
 const backgroundVariants = {
-  hidden: { opacity: 0 }, // Start background hidden
+  hidden: { opacity: 0 },
   visible: { 
     opacity: 1, 
-    transition: { duration: 1 } // Fade in duration for the background
+    transition: { duration: 1 }
   },
 };
+
+const Arrow = () => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    width="24" 
+    height="24" 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2" 
+    strokeLinecap="round" 
+    strokeLinejoin="round" 
+    className="arrow-icon"
+  >
+    <line x1="12" y1="5" x2="12" y2="19"></line>
+    <polyline points="19 12 12 19 5 12"></polyline>
+  </svg>
+);
 
 export default function Envelope() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,6 +56,7 @@ export default function Envelope() {
 
   return (
     <div>
+      <div className=" flex items-center justify-center p-10 font-semibold text-3xl">Tap the letter</div>
       <motion.div
         className={styles.background}
         initial="hidden"
@@ -77,6 +96,9 @@ export default function Envelope() {
             </div>
           </motion.div>
           <div className={styles.heart}></div>
+          <div className={styles.arrowContainer}>
+            <Arrow />
+          </div>
         </div>
       </motion.div>
     </div>
