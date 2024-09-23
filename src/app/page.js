@@ -13,7 +13,6 @@ const sentences = [
   "a placeholder",
   "in my own little",
   "special way",
-  "in my own little ",
   "Before we get the cake",
   "Hope you don't mind",
   "Hope you like it",
@@ -33,7 +32,6 @@ const sectionColors = [
   "bg-gradient-to-br from-teal-600 to-teal-400",
   "bg-gradient-to-br from-orange-600 to-orange-400",
   "bg-gradient-to-br from-gray-600 to-gray-400",
-  "bg-gradient-to-br from-lime-600 to-lime-400",
   "bg-gradient-to-br from-lime-600 to-lime-400",
 ];
 
